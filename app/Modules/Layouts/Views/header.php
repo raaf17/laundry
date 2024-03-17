@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/stisla/node_modules/jqvmap/dist/jqvmap.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/weathericons/css/weather-icons.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/weathericons/css/weather-icons-wind.min.css">
-    <link rel="stylesheet" href="/stisla/node_modules/summernote/dist/summernote-bs4.css">
     <link rel="stylesheet" href="/stisla/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/select2/dist/css/select2.min.css">

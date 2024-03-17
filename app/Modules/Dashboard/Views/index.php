@@ -11,10 +11,10 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Admin</h4>
+              <h4>Pelanggan</h4>
             </div>
             <div class="card-body">
-              10
+              <?= countData('pelanggan'); ?>
             </div>
           </div>
         </div>
@@ -26,10 +26,10 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Customer</h4>
+              <h4>User</h4>
             </div>
             <div class="card-body">
-              42
+              <?= countData('users'); ?>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Mobil</h4>
+              <h4>Transaksi</h4>
             </div>
             <div class="card-body">
               1,201
@@ -56,10 +56,10 @@
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Transaksi</h4>
+              <h4>Pengeluaran</h4>
             </div>
             <div class="card-body">
-              47
+              <?= countData('pengeluaran'); ?>
             </div>
           </div>
         </div>
@@ -74,19 +74,14 @@
           <div class="card-body">
             <ul class="list-unstyled list-unstyled-border">
               <li class="media">
-                <img class="mr-3 rounded-circle" width="50" src="/stisla/assets/img/avatar/avatar-1.png" alt="avatar">
+                <img class="mr-3 rounded-circle" width="50" src="<?= site_url('img/upload/' . userLogin()->foto) ?>" alt="avatar">
                 <div class="media-body">
-                  <div class="media-title"><b>Maman</b></div>
-                  <span class="">Nama Lengkap : Rafi</span><br>
-                  <span class="">Nama Lengkap : Rafi</span>
+                  <div class="media-title"><b><?= userLogin()->username; ?></b></div>
+                  <span class="">Nama Lengkap : <?= userLogin()->nama; ?></span><br>
+                  <span class="">Jabatan : <?= userLogin()->level; ?></span>
                 </div>
               </li>
             </ul>
-            <div class="pt-1 pb-1">
-              <a href="#" class="btn btn-primary btn-lg btn-round">
-                View All
-              </a>
-            </div>
           </div>
         </div>
       </div>

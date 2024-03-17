@@ -9,6 +9,7 @@ class Users extends Controller
 {
   protected $db;
   protected $users;
+  protected $helpers = ['custom'];
 
   public function __construct()
   {

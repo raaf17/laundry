@@ -258,3 +258,237 @@ INFO - 2024-03-17 05:18:46 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-03-17 05:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-03-17 05:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-03-17 05:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 07:15:08 --> Invalid file: "App\Modules\Auth\Views\index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Auth\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\index', [], true)
+ 3 APPPATH\Modules\Auth\Controllers\Auth.php(26): view('App\\Modules\\Auth\\Views\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 07:16:15 --> Invalid file: "App\Modules\Auth\Views\index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Auth\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\index', [], true)
+ 3 APPPATH\Modules\Auth\Controllers\Auth.php(24): view('App\\Modules\\Auth\\Views\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 07:16:53 --> Invalid file: "App\Modules\Auth\Views\index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Auth\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\index', [], true)
+ 3 APPPATH\Modules\Auth\Controllers\Auth.php(24): view('App\\Modules\\Auth\\Views\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 07:17:16 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Modules\Auth\Views\login.php on line 11.
+ 1 APPPATH\Modules\Auth\Views\login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\login', [], true)
+ 5 APPPATH\Modules\Auth\Controllers\Auth.php(24): view('App\\Modules\\Auth\\Views\\login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 15:32:09 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+in SYSTEMPATH\Model.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\development\\laundry\\vendor\\composer/../../system/Model.php')
+ 2 APPPATH\Modules\Users\Models\UserModel.php(7): CodeIgniter\Autoloader\Autoloader->loadClassmap('CodeIgniter\\Model')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Models\\UserModel.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Models\\UserModel.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Users\\Models\\UserModel')
+ 6 APPPATH\Modules\Auth\Controllers\Auth.php(15): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Users\\Models\\UserModel')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Modules\Auth\Controllers\Auth->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 15:32:45 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Modules\Auth\Views\login.php on line 11.
+ 1 APPPATH\Modules\Auth\Views\login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\login', [], true)
+ 5 APPPATH\Modules\Auth\Controllers\Auth.php(25): view('App\\Modules\\Auth\\Views\\login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 15:33:59 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Modules\Auth\Views\login.php on line 11.
+ 1 APPPATH\Modules\Auth\Views\login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\login', [], true)
+ 5 APPPATH\Modules\Auth\Controllers\Auth.php(25): view('App\\Modules\\Auth\\Views\\login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 15:34:41 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Modules\Auth\Views\login.php on line 11.
+ 1 APPPATH\Modules\Auth\Views\login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Auth\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Auth\\Views\\login', [], true)
+ 5 APPPATH\Modules\Auth\Controllers\Auth.php(25): view('App\\Modules\\Auth\\Views\\login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 15:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 15:37:56 --> Call to a member function table() on null
+in APPPATH\Modules\Auth\Controllers\Auth.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Auth\Controllers\Auth->authLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 15:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 15:39:10 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in C:\laragon\www\development\laundry\system\Model.php on line 238
+in SYSTEMPATH\Database\BaseResult.php on line 104.
+ 1 SYSTEMPATH\Model.php(238): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 3 APPPATH\Modules\Users\Controllers\Users.php(22): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-17 15:40:08 --> CodeIgniter\Database\BaseResult::getResult(): Argument #1 ($type) must be of type string, null given, called in C:\laragon\www\development\laundry\system\Model.php on line 238
+in SYSTEMPATH\Database\BaseResult.php on line 104.
+ 1 SYSTEMPATH\Model.php(238): CodeIgniter\Database\BaseResult->getResult(null)
+ 2 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 3 APPPATH\Modules\Users\Controllers\Users.php(22): CodeIgniter\BaseModel->findAll()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 15:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 15:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 15:54:42 --> Call to undefined function userLogin()
+in APPPATH\Modules\Layouts\Views\navbar.php on line 16.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Layouts\\Views\\navbar', [], true)
+ 4 APPPATH\Modules\Dashboard\Controllers\Dashboard.php(16): view('App\\Modules\\Layouts\\Views\\navbar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Dashboard\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Dashboard\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 15:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 16:20:05 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('auth/authLogin', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 16:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 16:20:28 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(177): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('auth/authLogin', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 16:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:21:11 --> CSRF token verified.
+INFO - 2024-03-17 16:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:42:22 --> CSRF token verified.
+INFO - 2024-03-17 16:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:42:22 --> CSRF token verified.
+INFO - 2024-03-17 16:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 16:45:20 --> Undefined variable $session
+in APPPATH\Modules\Dashboard\Views\index.php on line 86.
+ 1 APPPATH\Modules\Dashboard\Views\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Dashboard\\Views\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Dashboard\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Dashboard\\Views\\index', [], true)
+ 5 APPPATH\Modules\Dashboard\Controllers\Dashboard.php(18): view('App\\Modules\\Dashboard\\Views\\index')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Dashboard\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Dashboard\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 16:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:51:49 --> CSRF token verified.
+INFO - 2024-03-17 16:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-17 17:34:08 --> Call to a member function table() on null
+in APPPATH\Modules\Settings\Controllers\Settings.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Settings\Controllers\Settings->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Settings\Controllers\Settings))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-17 17:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-17 17:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

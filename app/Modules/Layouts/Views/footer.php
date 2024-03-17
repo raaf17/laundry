@@ -22,7 +22,6 @@
 <script src="/stisla/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
 <script src="/stisla/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="/stisla/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
-<script src="/stisla/node_modules/summernote/dist/summernote-bs4.js"></script>
 <script src="/stisla/assets/js/page/index-0.js"></script>
 <script src="/stisla/node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="/stisla/node_modules/selectric/public/jquery.selectric.min.js"></script>
