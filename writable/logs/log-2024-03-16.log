@@ -1,0 +1,266 @@
+CRITICAL - 2024-03-16 07:52:04 --> Call to a member function getRandomName() on null
+in APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->create()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 07:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 07:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 07:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 07:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 07:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 08:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 09:10:34 --> Call to a member function getError() on null
+in APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 09:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 16:32:19 --> Call to a member function getError() on null
+in APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 16:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 16:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 16:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 16:33:52 --> Undefined variable $data_jenis
+in APPPATH\Modules\Pelanggan\Views\trash.php on line 60.
+ 1 APPPATH\Modules\Pelanggan\Views\trash.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_jenis', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php', 60)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Pelanggan\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php(166): view('App\\Modules\\Pelanggan\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 16:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 16:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 16:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 16:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 16:35:43 --> Undefined property: stdClass::$id_jenis
+in APPPATH\Modules\Pelanggan\Views\trash.php on line 71.
+ 1 APPPATH\Modules\Pelanggan\Views\trash.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_jenis', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Pelanggan\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php(166): view('App\\Modules\\Pelanggan\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 16:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 16:36:02 --> Undefined property: stdClass::$id_jenis
+in APPPATH\Modules\Pelanggan\Views\trash.php on line 71.
+ 1 APPPATH\Modules\Pelanggan\Views\trash.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_jenis', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Pelanggan\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php(166): view('App\\Modules\\Pelanggan\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 16:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 16:36:27 --> Undefined property: stdClass::$id_jenis
+in APPPATH\Modules\Pelanggan\Views\trash.php on line 71.
+ 1 APPPATH\Modules\Pelanggan\Views\trash.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_jenis', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Pelanggan\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php(166): view('App\\Modules\\Pelanggan\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:09:11 --> unlink(C:\laragon\www\development\laundry\writable\../public/img/upload1710577435_acc27e9ebb77e207e8da.jpg): No such file or directory
+in APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php on line 121.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\laragon\\www\\development\\laundry\\writable\\../public/img/upload1710577435_acc27e9ebb77e207e8da.jpg): No such file or directory', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Pelanggan\\Controllers\\Pelanggan.php', 121)
+ 2 APPPATH\Modules\Pelanggan\Controllers\Pelanggan.php(121): unlink('C:\\laragon\\www\\development\\laundry\\writable\\../public/img/upload1710577435_acc27e9ebb77e207e8da.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Pelanggan\Controllers\Pelanggan->update('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Pelanggan\Controllers\Pelanggan))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:38:35 --> Undefined variable $data_pelanggan
+in APPPATH\Modules\Users\Views\edit.php on line 19.
+ 1 APPPATH\Modules\Users\Views\edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pelanggan', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\edit.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Users\\Views\\edit', [], true)
+ 5 APPPATH\Modules\Users\Controllers\Users.php(97): view('App\\Modules\\Users\\Views\\edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:43:42 --> Undefined variable $data_pelanggan
+in APPPATH\Modules\Users\Views\trash.php on line 62.
+ 1 APPPATH\Modules\Users\Views\trash.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pelanggan', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\trash.php', 62)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Users\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Users\Controllers\Users.php(177): view('App\\Modules\\Users\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:45:07 --> Undefined property: stdClass::$id_pelanggan
+in APPPATH\Modules\Users\Views\trash.php on line 77.
+ 1 APPPATH\Modules\Users\Views\trash.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_pelanggan', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\trash.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Views\\trash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1174): CodeIgniter\View\View->render('App\\Modules\\Users\\Views\\trash', [], true)
+ 5 APPPATH\Modules\Users\Controllers\Users.php(177): view('App\\Modules\\Users\\Views\\trash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->trash()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 17:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:51:03 --> Attempt to read property "image" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 206.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "image" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 17:52:06 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 206.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:19:40 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 208.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:43:29 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:44:21 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:45:57 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-16 18:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:49:37 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+CRITICAL - 2024-03-16 18:49:43 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:50:54 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
+INFO - 2024-03-16 18:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-16 18:51:41 --> Attempt to read property "foto" on null
+in APPPATH\Modules\Users\Controllers\Users.php on line 207.
+ 1 APPPATH\Modules\Users\Controllers\Users.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'C:\\laragon\\www\\development\\laundry\\app\\Modules\\Users\\Controllers\\Users.php', 207)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Modules\Users\Controllers\Users->delete2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Users\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\development\\laundry\\public\\index.php')
