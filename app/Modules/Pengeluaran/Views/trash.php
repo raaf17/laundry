@@ -3,7 +3,7 @@
         <div class="section-header">
             <h1><?= $title; ?></h1>
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="#">Master Data</a></div>
+                <div class="breadcrumb-item active"><a href="#">Pengeluaran</a></div>
                 <div class="breadcrumb-item"><?= $title; ?></div>
             </div>
         </div>
@@ -36,8 +36,8 @@
                 <div class="card-header">
                     <h4><?= $title; ?></h4>
                     <div class="card-header-action">
-                        <a href="/jenis/restore" class="btn btn-info">Restore All</a>
-                        <form action="/jenis/delete2" method="POST" class="d-inline" onsubmit="return confirm('Yakin mau hapus data?')">
+                        <a href="/pengeluaran/restore" class="btn btn-info">Restore All</a>
+                        <form action="/pengeluaran/delete2" method="POST" class="d-inline" onsubmit="return confirm('Yakin mau hapus data?')">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="_method" value="DELETE">
                             <button href="submit" class="btn btn-danger btn-sm">Delete All</button>
@@ -49,23 +49,23 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Jenis Laundry</th>
-                                <th>Lama Proses</th>
-                                <th>Tarif</th>
+                                <th>Tanggal Pengeluaran</th>
+                                <th>Catatan</th>
+                                <th>Pengeluaran</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1; ?>
-                            <?php foreach ($data_jenis as $data) : ?>
+                            <?php foreach ($data_pengeluaran as $data) : ?>
                                 <tr>
                                     <td width="5%"><?= $no++; ?>.</td>
-                                    <td><?= $data->jenis_laundry; ?></td>
-                                    <td><?= $data->lama_proses; ?></td>
-                                    <td>Rp. <?= number_format($data->tarif,0,',','.'); ?></td>
+                                    <td><?= $data->tgl_pengeluaran; ?></td>
+                                    <td><?= $data->catatan; ?></td>
+                                    <td>Rp. <?= number_format($data->pengeluaran, 0, ',', '.'); ?></td>
                                     <td width="18%" class="text-center">
-                                        <a href="/jenis/restore/<?= $data->id_jenis; ?>" class="btn btn-info btn-sm">Restore</a>
-                                        <form action="/jenis/delete2/<?= $data->id_jenis; ?>" method="post" class="d-inline" onsubmit="return confirm('Yakin mau hapus data?')">
+                                        <a href="/pengeluaran/restore/<?= $data->id_pengeluaran; ?>" class="btn btn-info btn-sm">Restore</a>
+                                        <form action="/pengeluaran/delete2/<?= $data->id_pengeluaran; ?>" method="post" class="d-inline" onsubmit="return confirm('Yakin mau hapus data?')">
                                             <?= csrf_field(); ?>
                                             <button href="submit" class="btn btn-danger btn-sm">Delete</button>
                                         </form>

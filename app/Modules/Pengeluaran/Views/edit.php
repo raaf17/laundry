@@ -3,8 +3,7 @@
         <div class="section-header">
             <h1><?= $title; ?></h1>
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="#">Master Data</a></div>
-                <div class="breadcrumb-item active"><a href="#">Data Jenis</a></div>
+                <div class="breadcrumb-item active"><a href="#">Pengeluaran</a></div>
                 <div class="breadcrumb-item"><?= $title; ?></div>
             </div>
         </div>
@@ -18,37 +17,37 @@
                         </div>
                         <div class="card-body">
                             <?php $validation = \Config\Services::validation(); ?>
-                            <form class="form" action="/jenis/update/<?= $data_jenis->id_jenis; ?>" method="POST">
+                            <form class="form" action="/pengeluaran/update/<?= $data_pengeluaran->id_pengeluaran; ?>" method="POST">
                                 <?= csrf_field(); ?>
                                 <div class="form-group">
-                                    <label for="jenis_laundry">Jenis Laundry</label>
-                                    <input type="text" id="jenis_laundry" class="form-control <?= $validation->hasError('jenis_laundry') ? 'is-invalid' : null ?>" name="jenis_laundry" value="<?= $data_jenis->jenis_laundry; ?>">
-                                    <?php if ($validation->hasError('jenis_laundry')) : ?>
+                                    <label for="tgl_pengeluaran">Tanggal Pengeluaran</label>
+                                    <input type="text" id="tgl_pengeluaran" class="form-control datepicker" name="tgl_pengeluaran" value="<?= $data_pengeluaran->tgl_pengeluaran; ?>">
+                                    <?php if ($validation->hasError('tgl_pengeluaran')) : ?>
                                         <div class=" invalid-feedback">
-                                            <?= $validation->hasError('jenis_laundry') ?>
+                                            <?= $validation->hasError('tgl_pengeluaran') ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lama_proses">Lama Proses</label>
-                                    <input type="number" id="lama_proses" class="form-control <?= $validation->hasError('lama_proses') ? 'is-invalid' : null ?>" name="lama_proses" value="<?= $data_jenis->lama_proses; ?>">
-                                    <?php if ($validation->hasError('lama_proses')) : ?>
+                                    <label for="lama_proses">Catatan</label>
+                                    <textarea name="catatan" id="catatan" cols="30" rows="10" class="form-control <?= $validation->hasError('catatan') ? 'is-invalid' : null ?>"><?= $data_pengeluaran->catatan; ?></textarea>
+                                    <?php if ($validation->hasError('catatan')) : ?>
                                         <div class=" invalid-feedback">
-                                            <?= $validation->hasError('lama_proses') ?>
+                                            <?= $validation->hasError('catatan') ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tarif">Tarif</label>
-                                    <input type="number" id="tarif" class="form-control <?= $validation->hasError('tarif') ? 'is-invalid' : null ?>" name="tarif" value="<?= $data_jenis->tarif; ?>">
-                                    <?php if ($validation->hasError('tarif')) : ?>
+                                    <label for="pengeluaran">Pengeluaran</label>
+                                    <input type="number" id="pengeluaran" class="form-control <?= $validation->hasError('pengeluaran') ? 'is-invalid' : null ?>" name="pengeluaran" value="<?= $data_pengeluaran->pengeluaran; ?>">
+                                    <?php if ($validation->hasError('pengeluaran')) : ?>
                                         <div class=" invalid-feedback">
-                                            <?= $validation->hasError('tarif') ?>
+                                            <?= $validation->hasError('pengeluaran') ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="d-flex justify-content-end mt-2">
-                                    <a href="/jenis" class="btn btn-secondary">Kembali</a>
+                                    <a href="/pengeluaran" class="btn btn-secondary">Kembali</a>
                                     <button type="submit" class="btn btn-primary ml-2">Simpan</button>
                                 </div>
                             </form>

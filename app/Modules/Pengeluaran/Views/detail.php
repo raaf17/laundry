@@ -3,7 +3,6 @@
     <div class="section-header">
       <h1><?= $title; ?></h1>
       <div class="section-header-breadcrumb">
-        <div class="breadcrumb-item active"><a href="#">Master Data</a></div>
         <div class="breadcrumb-item"><?= $title; ?></div>
       </div>
     </div>
@@ -25,36 +24,30 @@
       <div class="card card-primary">
         <div class="card-header">
           <h4><?= $title; ?></h4>
-          <div class="card-header-action">
-            <a href="/jenis/new" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
-            <a href="/jenis/trash" class="btn btn-danger"><i class="fas fa-trash"></i> Trash</a>
-          </div>
         </div>
         <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-bordered" id="table-1">
+          <table class="table table-hover table-striped table-bordered">
             <thead>
               <tr>
                 <th>No</th>
-                <th>Jenis Laundry</th>
-                <th>Lama Proses</th>
-                <th>Tarif</th>
-                <th>Aksi</th>
+                <th>Tanggal Pengeluaran</th>
+                <th>Catatan</th>
+                <th>Pengeluaran</th>
               </tr>
             </thead>
             <tbody>
-              <?php $no = 1; ?>
-              <?php foreach ($data_jenis as $data) : ?>
-                <tr>
-                  <td width="5%"><?= $no++; ?>.</td>
-                  <td><?= $data->jenis_laundry; ?></td>
-                  <td><?= $data->lama_proses; ?></td>
-                  <td>Rp. <?= number_format($data->tarif,0,',','.'); ?></td>
-                  <td width="12%" class="text-center">
-                    <a href="jenis/edit/<?= $data->id_jenis; ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-square"></i></a>
-                    <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data->id_jenis; ?>')"><i class="fas fa-trash"></i></button>
-                  </td>
-                </tr>
-              <?php endforeach; ?>
+              <tr>
+                <td width="5%">1.</td>
+                <td><?= $data_pengeluaran->tgl_pengeluaran; ?></td>
+                <td><?= $data_pengeluaran->catatan; ?></td>
+                <td>Rp. <?= number_format($data_pengeluaran->pengeluaran,0,',','.'); ?></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td colspan="3" class="text-center"><b>Total Pengeluaran</b></td>
+                <td><b>Rp. <?= number_format($data_pengeluaran->pengeluaran,0,',','.'); ?></b></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -68,7 +61,7 @@
 </div>
 
 <script>
-  function hapus(id_jenis) {
+  function hapus(id_pengeluaran) {
     Swal.fire({
       title: "Hapus?",
       text: "Yakin Data Jenis akan dihapus?",
@@ -80,11 +73,11 @@
     }).then((result) => {
       $.ajax({
         type: 'POST',
-        url: '<?= site_url('jenis/delete') ?>',
+        url: '<?= site_url('pengeluaran/delete') ?>',
         data: {
           _method: 'delete',
           <?= csrf_token() ?>: "<?= csrf_hash() ?>",
-          id_jenis: id_jenis
+          id_pengeluaran: id_pengeluaran
         },
         dataType: 'json',
         success: function(response) {
@@ -95,7 +88,7 @@
               icon: "success",
             }).then((result) => {
               if (result.value) {
-                window.location.href = "<?= site_url('jenis') ?>"
+                window.location.href = "<?= site_url('pengeluaran') ?>"
               }
             })
           }

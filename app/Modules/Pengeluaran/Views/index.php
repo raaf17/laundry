@@ -3,7 +3,6 @@
     <div class="section-header">
       <h1><?= $title; ?></h1>
       <div class="section-header-breadcrumb">
-        <div class="breadcrumb-item active"><a href="#">Master Data</a></div>
         <div class="breadcrumb-item"><?= $title; ?></div>
       </div>
     </div>
@@ -26,8 +25,8 @@
         <div class="card-header">
           <h4><?= $title; ?></h4>
           <div class="card-header-action">
-            <a href="/jenis/new" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
-            <a href="/jenis/trash" class="btn btn-danger"><i class="fas fa-trash"></i> Trash</a>
+            <a href="/pengeluaran/new" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
+            <a href="/pengeluaran/trash" class="btn btn-danger"><i class="fas fa-trash"></i> Trash</a>
           </div>
         </div>
         <div class="card-body table-responsive">
@@ -35,23 +34,24 @@
             <thead>
               <tr>
                 <th>No</th>
-                <th>Jenis Laundry</th>
-                <th>Lama Proses</th>
-                <th>Tarif</th>
+                <th>Tanggal Pengeluaran</th>
+                <th>Catatan</th>
+                <th>Pengeluaran</th>
                 <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
               <?php $no = 1; ?>
-              <?php foreach ($data_jenis as $data) : ?>
+              <?php foreach ($data_pengeluaran as $data) : ?>
                 <tr>
                   <td width="5%"><?= $no++; ?>.</td>
-                  <td><?= $data->jenis_laundry; ?></td>
-                  <td><?= $data->lama_proses; ?></td>
-                  <td>Rp. <?= number_format($data->tarif,0,',','.'); ?></td>
-                  <td width="12%" class="text-center">
-                    <a href="jenis/edit/<?= $data->id_jenis; ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-square"></i></a>
-                    <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data->id_jenis; ?>')"><i class="fas fa-trash"></i></button>
+                  <td><?= $data->tgl_pengeluaran; ?></td>
+                  <td><?= $data->catatan; ?></td>
+                  <td>Rp. <?= number_format($data->pengeluaran,0,',','.'); ?></td>
+                  <td width="15%" class="text-center">
+                    <a href="pengeluaran/detail/<?= $data->id_pengeluaran; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="pengeluaran/edit/<?= $data->id_pengeluaran; ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-square"></i></a>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data->id_pengeluaran; ?>')"><i class="fas fa-trash"></i></button>
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -68,7 +68,7 @@
 </div>
 
 <script>
-  function hapus(id_jenis) {
+  function hapus(id_pengeluaran) {
     Swal.fire({
       title: "Hapus?",
       text: "Yakin Data Jenis akan dihapus?",
@@ -80,11 +80,11 @@
     }).then((result) => {
       $.ajax({
         type: 'POST',
-        url: '<?= site_url('jenis/delete') ?>',
+        url: '<?= site_url('pengeluaran/delete') ?>',
         data: {
           _method: 'delete',
           <?= csrf_token() ?>: "<?= csrf_hash() ?>",
-          id_jenis: id_jenis
+          id_pengeluaran: id_pengeluaran
         },
         dataType: 'json',
         success: function(response) {
@@ -95,7 +95,7 @@
               icon: "success",
             }).then((result) => {
               if (result.value) {
-                window.location.href = "<?= site_url('jenis') ?>"
+                window.location.href = "<?= site_url('pengeluaran') ?>"
               }
             })
           }
