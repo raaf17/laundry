@@ -47,8 +47,8 @@
                 <tr>
                   <td width="5%"><?= $no++; ?>.</td>
                   <td><?= $data->jenis_laundry; ?></td>
-                  <td><?= $data->lama_proses; ?></td>
-                  <td>Rp. <?= number_format($data->tarif,0,',','.'); ?></td>
+                  <td><?= $data->lama_proses; ?> Hari</td>
+                  <td>Rp. <?= number_format($data->tarif,0,',','.'); ?>/Kg</td>
                   <td width="12%" class="text-center">
                     <a href="jenis/edit/<?= $data->id_jenis; ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-square"></i></a>
                     <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data->id_jenis; ?>')"><i class="fas fa-trash"></i></button>

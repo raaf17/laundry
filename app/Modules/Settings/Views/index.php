@@ -24,18 +24,6 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="card card-large-icons">
-            <div class="card-icon bg-primary text-white">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="card-body">
-              <h4>Ganti Password</h4>
-              <p>Ganti password anda disini.</p>
-              <a href="<?= site_url('auth/gantiPassword') ?>" class="card-cta">Klik disini <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

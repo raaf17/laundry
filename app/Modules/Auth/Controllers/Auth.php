@@ -22,8 +22,8 @@ class Auth extends Controller
     ];
 
     echo view('App\Modules\Layouts\Views\header', $data);
-    echo view('App\Modules\Auth\Views\login');
-    echo view('App\Modules\Layouts\Views\footer');
+    echo view('App\Modules\Auth\Views\login', $data);
+    echo view('App\Modules\Layouts\Views\footer', $data);
   }
 
   public function authLogin()
@@ -42,7 +42,7 @@ class Auth extends Controller
       session()->set($params);
 
       if ($user->level == 'Admin') {
-        session()->setFlashdata('message', 'Anda Berhasil Login');
+        session()->setFlashdata('message', 'Selamat Datang, Anda Berhasil Login');
         return redirect()->to('/dashboard');
       } elseif ($user->level == 'Customer') {
         return redirect()->to('/customer');
@@ -61,8 +61,8 @@ class Auth extends Controller
     ];
 
     echo view('App\Modules\Layouts\Views\header', $data);
-    echo view('App\Modules\Auth\Views\register');
-    echo view('App\Modules\Layouts\Views\footer');
+    echo view('App\Modules\Auth\Views\register', $data);
+    echo view('App\Modules\Layouts\Views\footer', $data);
   }
 
   public function logout()

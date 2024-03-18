@@ -1,11 +1,15 @@
-<footer class="main-footer">
-    <div class="footer-left">
-        Copyright &copy; <?= gmdate("Y") ?> <div class="bullet"></div> Design By <a href="">Kipli</a>
-    </div>
-    <div class="footer-right">
-        2.3.0
-    </div>
-</footer>
+<?php if ($title === 'Login' || $title === 'Register') : ?>
+    <div></div>
+<?php else : ?>
+    <footer class="main-footer">
+        <div class="footer-left">
+            Copyright &copy; <?= gmdate("Y") ?> <div class="bullet"></div> Design By <a href="">Kipli</a>
+        </div>
+        <div class="footer-right">
+            1.0.0
+        </div>
+    </footer>
+<?php endif; ?>
 </div>
 </div>
 
@@ -22,21 +26,17 @@
 <script src="/stisla/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
 <script src="/stisla/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="/stisla/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
-<script src="/stisla/assets/js/page/index-0.js"></script>
+<!-- <script src="/stisla/assets/js/page/index-0.js"></script> -->
 <script src="/stisla/node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="/stisla/node_modules/selectric/public/jquery.selectric.min.js"></script>
 <script src="/stisla/assets/js/page/modules-datatables.js"></script>
 <script src="/stisla/assets/js/page/forms-advanced-forms.js"></script>
-<script src="/stisla/node_modules/prism/prism.js"></script>
+<!-- <script src="/stisla/node_modules/prism/prism.js"></script> -->
 <script src="/stisla/assets/js/page/bootstrap-modal.js"></script>
 <script src="/stisla/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="/stisla/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
 <script src="/stisla/node_modules/jquery-selectric/jquery.selectric.min.js"></script>
-<script src="/stisla/node_modules/cleave-js/dist/cleave.min.js"></script>
-<script src="/stisla/node_modules/cleave-js/dist/addons/cleave-phone.us.js"></script>
 <script src="/stisla/node_modules/jquery-pwstrength/jquery.pwstrength.min.js"></script>
-<script src="/stisla/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
-<script src="/stisla/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 
 <!-- Template JS File -->
 <script src="/stisla/assets/js/scripts.js"></script>

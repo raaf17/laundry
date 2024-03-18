@@ -70,6 +70,7 @@ class Filters extends BaseConfig
                 'pelanggan/*',
                 'users/*',
                 'pengeluaran/*',
+                'settings/*'
             ]
         ]
     ];

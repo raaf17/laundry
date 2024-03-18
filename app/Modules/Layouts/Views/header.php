@@ -11,19 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="/stisla/node_modules/jqvmap/dist/jqvmap.min.css">
-    <link rel="stylesheet" href="/stisla/node_modules/weathericons/css/weather-icons.min.css">
-    <link rel="stylesheet" href="/stisla/node_modules/weathericons/css/weather-icons-wind.min.css">
+    <!-- <link rel="stylesheet" href="/stisla/node_modules/jqvmap/dist/jqvmap.min.css"> -->
     <link rel="stylesheet" href="/stisla/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="/stisla/node_modules/selectric/public/selectric.css">
-    <link rel="stylesheet" href="/stisla/node_modules/prism/prism.css">
+    <!-- <link rel="stylesheet" href="/stisla/node_modules/prism/prism.css"> -->
     <link rel="stylesheet" href="/stisla/node_modules/jquery-selectric/selectric.css">
     <link rel="stylesheet" href="/stisla/node_modules/bootstrap-daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="/stisla/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
-    <link rel="stylesheet" href="/stisla/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
-    <link rel="stylesheet" href="/stisla/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
 
     <link rel="stylesheet" href="/stisla/assets/css/style.css">
     <link rel="stylesheet" href="/stisla/assets/css/components.css">

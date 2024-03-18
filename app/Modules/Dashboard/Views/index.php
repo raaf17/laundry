@@ -3,11 +3,24 @@
     <div class="section-header">
       <h1>Dashboard</h1>
     </div>
+
+    <!-- Alert Sukses -->
+    <?php if (session()->getFlashdata('message')) : ?>
+      <div class="alert alert-success alert-dismissible show fade">
+        <div class="alert-body">
+          <button class="close" data-dismiss="alert">
+            <span>&times;</span>
+          </button>
+          <?= session()->getFlashdata('message'); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-primary">
-            <i class="far fa-user"></i>
+            <i class="fas fa-users"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
@@ -22,7 +35,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-danger">
-            <i class="far fa-newspaper"></i>
+            <i class="fas fa-user"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
@@ -37,7 +50,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-warning">
-            <i class="far fa-file"></i>
+            <i class="fas fa-money-bill-transfer"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
@@ -52,7 +65,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-success">
-            <i class="fas fa-circle"></i>
+            <i class="fas fa-money-bills"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
@@ -66,7 +79,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+      <div class="col-lg-5 col-md-6 col-12 col-sm-12">
         <div class="card">
           <div class="card-header">
             <h4>Aktivitas Login</h4>
